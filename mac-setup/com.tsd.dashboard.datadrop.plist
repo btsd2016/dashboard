@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.tsd.dashboard.datadrop</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>HOMEDIR/TSD Dashboard/watch-drops.sh</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>HOMEDIR/TSD Dashboard/watcher.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>HOMEDIR/TSD Dashboard/watcher-error.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>HOMEDIR/TSD Dashboard</string>
+</dict>
+</plist>

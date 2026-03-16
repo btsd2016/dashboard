@@ -1,0 +1,2862 @@
+{
+  "Abbey Fosdike|1": {
+    "name": "Abbey Fosdike",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17986.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Abbey Fosdike|2": {
+    "name": "Abbey Fosdike",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17986.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Abbey Fosdike|4": {
+    "name": "Abbey Fosdike",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17986.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Amie Bolton|1": {
+    "name": "Amie Bolton",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17279.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Amie Bolton|2": {
+    "name": "Amie Bolton",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17279.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Amie Bolton|4": {
+    "name": "Amie Bolton",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17279.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ana Machiste|1": {
+    "name": "Ana Machiste",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 25758.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ana Machiste|2": {
+    "name": "Ana Machiste",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 25758.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ana Machiste|4": {
+    "name": "Ana Machiste",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 25758.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Andrew Foulis|1": {
+    "name": "Andrew Foulis",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Andrew Foulis|2": {
+    "name": "Andrew Foulis",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Andrew Foulis|4": {
+    "name": "Andrew Foulis",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Barbora Bystricanova|1": {
+    "name": "Barbora Bystricanova",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 37786.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Barbora Bystricanova|2": {
+    "name": "Barbora Bystricanova",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 37786.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Barbora Bystricanova|4": {
+    "name": "Barbora Bystricanova",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 37786.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brianna Grace Kelly|1": {
+    "name": "Brianna Grace Kelly",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10988.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brianna Grace Kelly|2": {
+    "name": "Brianna Grace Kelly",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10988.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brianna Grace Kelly|4": {
+    "name": "Brianna Grace Kelly",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10988.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Bridie Dolan|1": {
+    "name": "Bridie Dolan",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 14836.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Bridie Dolan|2": {
+    "name": "Bridie Dolan",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 14836.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Bridie Dolan|4": {
+    "name": "Bridie Dolan",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 14836.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Britt White|1": {
+    "name": "Britt White",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 34085.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Britt White|2": {
+    "name": "Britt White",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 34085.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Britt White|4": {
+    "name": "Britt White",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 34085.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brooke Woolman|1": {
+    "name": "Brooke Woolman",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12887.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brooke Woolman|2": {
+    "name": "Brooke Woolman",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12887.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brooke Woolman|4": {
+    "name": "Brooke Woolman",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12887.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Caitlyn Maguire|1": {
+    "name": "Caitlyn Maguire",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 18735.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Caitlyn Maguire|2": {
+    "name": "Caitlyn Maguire",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 18735.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Caitlyn Maguire|4": {
+    "name": "Caitlyn Maguire",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 18735.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Cara Oosthuizen|1": {
+    "name": "Cara Oosthuizen",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 47924.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Cara Oosthuizen|2": {
+    "name": "Cara Oosthuizen",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 47924.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Cara Oosthuizen|4": {
+    "name": "Cara Oosthuizen",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 47924.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Chelsea Liu|1": {
+    "name": "Chelsea Liu",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 43719.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Chelsea Liu|2": {
+    "name": "Chelsea Liu",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 43719.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Chelsea Liu|4": {
+    "name": "Chelsea Liu",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 43719.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Connor Tranent|1": {
+    "name": "Connor Tranent",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": true,
+    "unit_rate": 37.9555,
+    "annual_salary": 75000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 37.9555
+  },
+  "Connor Tranent|2": {
+    "name": "Connor Tranent",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": true,
+    "unit_rate": 37.9555,
+    "annual_salary": 75000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 37.9555
+  },
+  "Connor Tranent|4": {
+    "name": "Connor Tranent",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": true,
+    "unit_rate": 37.9555,
+    "annual_salary": 75000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 37.9555
+  },
+  "Daniel Kolesnyk|1": {
+    "name": "Daniel Kolesnyk",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10702.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Daniel Kolesnyk|2": {
+    "name": "Daniel Kolesnyk",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10702.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Daniel Kolesnyk|4": {
+    "name": "Daniel Kolesnyk",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10702.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Dylan Meiklejohn|1": {
+    "name": "Dylan Meiklejohn",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 21753.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Dylan Meiklejohn|2": {
+    "name": "Dylan Meiklejohn",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 21753.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Dylan Meiklejohn|4": {
+    "name": "Dylan Meiklejohn",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 21753.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eleanor Loftus|1": {
+    "name": "Eleanor Loftus",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35693.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eleanor Loftus|2": {
+    "name": "Eleanor Loftus",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35693.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eleanor Loftus|4": {
+    "name": "Eleanor Loftus",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35693.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Elke Bidargaddi|1": {
+    "name": "Elke Bidargaddi",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 8123.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Elke Bidargaddi|2": {
+    "name": "Elke Bidargaddi",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 8123.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Elke Bidargaddi|4": {
+    "name": "Elke Bidargaddi",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 8123.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ella Andrews|1": {
+    "name": "Ella Andrews",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 40848.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ella Andrews|2": {
+    "name": "Ella Andrews",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 40848.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ella Andrews|4": {
+    "name": "Ella Andrews",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 40848.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ellie Harslett|1": {
+    "name": "Ellie Harslett",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7561.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ellie Harslett|2": {
+    "name": "Ellie Harslett",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7561.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ellie Harslett|4": {
+    "name": "Ellie Harslett",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7561.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eva Norris|1": {
+    "name": "Eva Norris",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 5797.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eva Norris|2": {
+    "name": "Eva Norris",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 5797.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eva Norris|4": {
+    "name": "Eva Norris",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 5797.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ewan Macgilp|1": {
+    "name": "Ewan Macgilp",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 38878.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ewan Macgilp|2": {
+    "name": "Ewan Macgilp",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 38878.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ewan Macgilp|4": {
+    "name": "Ewan Macgilp",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 38878.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Gabrielle Birt|1": {
+    "name": "Gabrielle Birt",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2604.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Gabrielle Birt|2": {
+    "name": "Gabrielle Birt",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2604.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Gabrielle Birt|4": {
+    "name": "Gabrielle Birt",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2604.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Georgia Mackereth|1": {
+    "name": "Georgia Mackereth",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 9450.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Georgia Mackereth|2": {
+    "name": "Georgia Mackereth",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 9450.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Georgia Mackereth|4": {
+    "name": "Georgia Mackereth",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 9450.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Greta Hutchinson|1": {
+    "name": "Greta Hutchinson",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 36767.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Greta Hutchinson|2": {
+    "name": "Greta Hutchinson",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 36767.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Greta Hutchinson|4": {
+    "name": "Greta Hutchinson",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 36767.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Halle Sanders|1": {
+    "name": "Halle Sanders",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 12161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Halle Sanders|2": {
+    "name": "Halle Sanders",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 12161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Halle Sanders|4": {
+    "name": "Halle Sanders",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 12161.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Harriet Davey|1": {
+    "name": "Harriet Davey",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 15352.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Harriet Davey|2": {
+    "name": "Harriet Davey",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 15352.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Harriet Davey|4": {
+    "name": "Harriet Davey",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 15352.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Hayley Weston|1": {
+    "name": "Hayley Weston",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 9627.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Hayley Weston|2": {
+    "name": "Hayley Weston",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 9627.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Hayley Weston|4": {
+    "name": "Hayley Weston",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 9627.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Imogen Birt|1": {
+    "name": "Imogen Birt",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11432.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Imogen Birt|2": {
+    "name": "Imogen Birt",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11432.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Imogen Birt|4": {
+    "name": "Imogen Birt",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11432.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isabel Bolton|1": {
+    "name": "Isabel Bolton",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4017.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isabel Bolton|2": {
+    "name": "Isabel Bolton",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4017.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isabel Bolton|4": {
+    "name": "Isabel Bolton",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4017.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Edmonds|1": {
+    "name": "Isla Edmonds",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 8984.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Edmonds|2": {
+    "name": "Isla Edmonds",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 8984.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Edmonds|4": {
+    "name": "Isla Edmonds",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 8984.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Vozzo|1": {
+    "name": "Isla Vozzo",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Vozzo|2": {
+    "name": "Isla Vozzo",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isla Vozzo|4": {
+    "name": "Isla Vozzo",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jade Holdstock|1": {
+    "name": "Jade Holdstock",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jade Holdstock|2": {
+    "name": "Jade Holdstock",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jade Holdstock|4": {
+    "name": "Jade Holdstock",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jasmine Higgins|1": {
+    "name": "Jasmine Higgins",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7611.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jasmine Higgins|2": {
+    "name": "Jasmine Higgins",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7611.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jasmine Higgins|4": {
+    "name": "Jasmine Higgins",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7611.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jess Neil|1": {
+    "name": "Jess Neil",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 48170.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jess Neil|2": {
+    "name": "Jess Neil",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 48170.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jess Neil|4": {
+    "name": "Jess Neil",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 48170.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Cronk|1": {
+    "name": "Jessica Cronk",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 22704.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Cronk|2": {
+    "name": "Jessica Cronk",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 22704.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Cronk|4": {
+    "name": "Jessica Cronk",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 22704.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Waller|1": {
+    "name": "Jessica Waller",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 51059.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Waller|2": {
+    "name": "Jessica Waller",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 51059.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Waller|4": {
+    "name": "Jessica Waller",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 51059.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Josephine Dawkins|1": {
+    "name": "Josephine Dawkins",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Josephine Dawkins|2": {
+    "name": "Josephine Dawkins",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Josephine Dawkins|4": {
+    "name": "Josephine Dawkins",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Joshua Squire|1": {
+    "name": "Joshua Squire",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 6449.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Joshua Squire|2": {
+    "name": "Joshua Squire",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 6449.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Joshua Squire|4": {
+    "name": "Joshua Squire",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 6449.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Juhoon Kim|1": {
+    "name": "Juhoon Kim",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 52699.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Juhoon Kim|2": {
+    "name": "Juhoon Kim",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 52699.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Juhoon Kim|4": {
+    "name": "Juhoon Kim",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 52699.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kahlia Hodgson|1": {
+    "name": "Kahlia Hodgson",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kahlia Hodgson|2": {
+    "name": "Kahlia Hodgson",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kahlia Hodgson|4": {
+    "name": "Kahlia Hodgson",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 0.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kawaljeet Kaur|1": {
+    "name": "Kawaljeet Kaur",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 16599.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kawaljeet Kaur|2": {
+    "name": "Kawaljeet Kaur",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 16599.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kawaljeet Kaur|4": {
+    "name": "Kawaljeet Kaur",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 16599.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lara Grocke|1": {
+    "name": "Lara Grocke",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20302.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lara Grocke|2": {
+    "name": "Lara Grocke",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20302.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lara Grocke|4": {
+    "name": "Lara Grocke",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20302.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Leila Radford|1": {
+    "name": "Leila Radford",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 31479.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Leila Radford|2": {
+    "name": "Leila Radford",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 31479.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Leila Radford|4": {
+    "name": "Leila Radford",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 31479.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lillian Woodroffe|1": {
+    "name": "Lillian Woodroffe",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32886.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lillian Woodroffe|2": {
+    "name": "Lillian Woodroffe",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32886.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lillian Woodroffe|4": {
+    "name": "Lillian Woodroffe",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32886.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lily Roberts|1": {
+    "name": "Lily Roberts",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4899.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lily Roberts|2": {
+    "name": "Lily Roberts",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4899.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lily Roberts|4": {
+    "name": "Lily Roberts",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4899.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lucie Wheeler|1": {
+    "name": "Lucie Wheeler",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 2922.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lucie Wheeler|2": {
+    "name": "Lucie Wheeler",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 2922.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lucie Wheeler|4": {
+    "name": "Lucie Wheeler",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 2922.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddi Higgins|1": {
+    "name": "Maddi Higgins",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2520.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddi Higgins|2": {
+    "name": "Maddi Higgins",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2520.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddi Higgins|4": {
+    "name": "Maddi Higgins",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 2520.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddie Dryden|1": {
+    "name": "Maddie Dryden",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 12851.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddie Dryden|2": {
+    "name": "Maddie Dryden",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 12851.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddie Dryden|4": {
+    "name": "Maddie Dryden",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 12851.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Madison Thwaites|1": {
+    "name": "Madison Thwaites",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 5125.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Madison Thwaites|2": {
+    "name": "Madison Thwaites",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 5125.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Madison Thwaites|4": {
+    "name": "Madison Thwaites",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 5125.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maggie Coldwell|1": {
+    "name": "Maggie Coldwell",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 4086.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maggie Coldwell|2": {
+    "name": "Maggie Coldwell",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 4086.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maggie Coldwell|4": {
+    "name": "Maggie Coldwell",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 4086.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mariia Skrypnyk|1": {
+    "name": "Mariia Skrypnyk",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35164.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mariia Skrypnyk|2": {
+    "name": "Mariia Skrypnyk",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35164.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mariia Skrypnyk|4": {
+    "name": "Mariia Skrypnyk",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 35164.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marion Mercier|1": {
+    "name": "Marion Mercier",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 5494.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marion Mercier|2": {
+    "name": "Marion Mercier",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 5494.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marion Mercier|4": {
+    "name": "Marion Mercier",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 5494.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marisa Serem|1": {
+    "name": "Marisa Serem",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11895.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marisa Serem|2": {
+    "name": "Marisa Serem",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11895.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marisa Serem|4": {
+    "name": "Marisa Serem",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 11895.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mathilda Todd|1": {
+    "name": "Mathilda Todd",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4090.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mathilda Todd|2": {
+    "name": "Mathilda Todd",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4090.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mathilda Todd|4": {
+    "name": "Mathilda Todd",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4090.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Megan Hood|1": {
+    "name": "Megan Hood",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 30266.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Megan Hood|2": {
+    "name": "Megan Hood",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 30266.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Megan Hood|4": {
+    "name": "Megan Hood",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 30266.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Millie Tiekstra|1": {
+    "name": "Millie Tiekstra",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32168.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Millie Tiekstra|2": {
+    "name": "Millie Tiekstra",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32168.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Millie Tiekstra|4": {
+    "name": "Millie Tiekstra",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 32168.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Petra Kaniokova|1": {
+    "name": "Petra Kaniokova",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 65110.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Petra Kaniokova|2": {
+    "name": "Petra Kaniokova",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 65110.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Petra Kaniokova|4": {
+    "name": "Petra Kaniokova",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 65110.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Polina Kovalova|1": {
+    "name": "Polina Kovalova",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 42226.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Polina Kovalova|2": {
+    "name": "Polina Kovalova",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 42226.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Polina Kovalova|4": {
+    "name": "Polina Kovalova",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 42226.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Raj Kayastha|1": {
+    "name": "Raj Kayastha",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 41100.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Raj Kayastha|2": {
+    "name": "Raj Kayastha",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 41100.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Raj Kayastha|4": {
+    "name": "Raj Kayastha",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 41100.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rebecca Jenkinson|1": {
+    "name": "Rebecca Jenkinson",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rebecca Jenkinson|2": {
+    "name": "Rebecca Jenkinson",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rebecca Jenkinson|4": {
+    "name": "Rebecca Jenkinson",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 6720.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rhys Hutchins|1": {
+    "name": "Rhys Hutchins",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 1877.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rhys Hutchins|2": {
+    "name": "Rhys Hutchins",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 1877.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rhys Hutchins|4": {
+    "name": "Rhys Hutchins",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 1877.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Amos-love|1": {
+    "name": "Ruby Amos-love",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 58965.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Amos-love|2": {
+    "name": "Ruby Amos-love",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 58965.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Amos-love|4": {
+    "name": "Ruby Amos-love",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 58965.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Gurney|1": {
+    "name": "Ruby Gurney",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12769.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Gurney|2": {
+    "name": "Ruby Gurney",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12769.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Gurney|4": {
+    "name": "Ruby Gurney",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12769.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ryen Archer|1": {
+    "name": "Ryen Archer",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 33357.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ryen Archer|2": {
+    "name": "Ryen Archer",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 33357.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ryen Archer|4": {
+    "name": "Ryen Archer",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 33357.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sammi Thiele|1": {
+    "name": "Sammi Thiele",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4829.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sammi Thiele|2": {
+    "name": "Sammi Thiele",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4829.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sammi Thiele|4": {
+    "name": "Sammi Thiele",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4829.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Shyam Poudel|1": {
+    "name": "Shyam Poudel",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 56382.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Shyam Poudel|2": {
+    "name": "Shyam Poudel",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 56382.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Shyam Poudel|4": {
+    "name": "Shyam Poudel",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 56382.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sofia Kouzionis|1": {
+    "name": "Sofia Kouzionis",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 18557.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sofia Kouzionis|2": {
+    "name": "Sofia Kouzionis",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 18557.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sofia Kouzionis|4": {
+    "name": "Sofia Kouzionis",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 18557.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Ackermann|1": {
+    "name": "Sophia Ackermann",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 33.38,
+    "annual_salary": 44057.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Ackermann|2": {
+    "name": "Sophia Ackermann",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 33.38,
+    "annual_salary": 44057.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Ackermann|4": {
+    "name": "Sophia Ackermann",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 33.38,
+    "annual_salary": 44057.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Lattas|1": {
+    "name": "Sophia Lattas",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 48942.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Lattas|2": {
+    "name": "Sophia Lattas",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 48942.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Lattas|4": {
+    "name": "Sophia Lattas",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 48942.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Tamara James|1": {
+    "name": "Tamara James",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 6569.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Tamara James|2": {
+    "name": "Tamara James",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 6569.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Tamara James|4": {
+    "name": "Tamara James",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 6569.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Xavier Kent|1": {
+    "name": "Xavier Kent",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 29826.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Xavier Kent|2": {
+    "name": "Xavier Kent",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 29826.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Xavier Kent|4": {
+    "name": "Xavier Kent",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 29826.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Yolanda Secomb|1": {
+    "name": "Yolanda Secomb",
+    "company_id": 1,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 20730.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Yolanda Secomb|2": {
+    "name": "Yolanda Secomb",
+    "company_id": 2,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 20730.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Yolanda Secomb|4": {
+    "name": "Yolanda Secomb",
+    "company_id": 4,
+    "org": "TSD",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 20730.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Aaron White|3": {
+    "name": "Aaron White",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 29336.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Abigail Henderson|3": {
+    "name": "Abigail Henderson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10081.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Alani Casement|3": {
+    "name": "Alani Casement",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 22876.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Amie Bolton|3": {
+    "name": "Amie Bolton",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10131.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Anabelle Grabb|3": {
+    "name": "Anabelle Grabb",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 9055.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Andrew Foulis|3": {
+    "name": "Andrew Foulis",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 9072.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Anna Leonardsson|3": {
+    "name": "Anna Leonardsson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 4260.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ashish Yadav|3": {
+    "name": "Ashish Yadav",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 59404.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Brianna Grace Kelly|3": {
+    "name": "Brianna Grace Kelly",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 52958.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Christopher Allan Ferguson|3": {
+    "name": "Christopher Allan Ferguson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 19192.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Connor Tranent|3": {
+    "name": "Connor Tranent",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": true,
+    "unit_rate": 0.0,
+    "annual_salary": 75000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 37.9555
+  },
+  "David Penuela|3": {
+    "name": "David Penuela",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 12758.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eli Stathopoulos|3": {
+    "name": "Eli Stathopoulos",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4985.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ella Simes|3": {
+    "name": "Ella Simes",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 60659.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ella Wade|3": {
+    "name": "Ella Wade",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 6134.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Esme Whitehouse|3": {
+    "name": "Esme Whitehouse",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4201.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Eva Norris|3": {
+    "name": "Eva Norris",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4029.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Flavio Alfano|3": {
+    "name": "Flavio Alfano",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 13230.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Gabrielle Birt|3": {
+    "name": "Gabrielle Birt",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 26468.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Giovanna Galante Papareli Valero|3": {
+    "name": "Giovanna Galante Papareli Valero",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 68035.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Haley Wilkinson|3": {
+    "name": "Haley Wilkinson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": true,
+    "unit_rate": 40.4858,
+    "annual_salary": 80000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 40.4858
+  },
+  "Halle Sanders|3": {
+    "name": "Halle Sanders",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 16.16,
+    "annual_salary": 3924.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Harriet Davey|3": {
+    "name": "Harriet Davey",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 12274.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Hayley Weston|3": {
+    "name": "Hayley Weston",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 60478.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Imogen Birt|3": {
+    "name": "Imogen Birt",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 27302.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Isabel Bolton|3": {
+    "name": "Isabel Bolton",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 9922.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jade Jaunay|3": {
+    "name": "Jade Jaunay",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 40616.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jasmin Fehling|3": {
+    "name": "Jasmin Fehling",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 18599.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jasmine Higgins|3": {
+    "name": "Jasmine Higgins",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7309.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jess Neil|3": {
+    "name": "Jess Neil",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 17327.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Jessica Cronk|3": {
+    "name": "Jessica Cronk",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 6204.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Josephine Dawkins|3": {
+    "name": "Josephine Dawkins",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 48841.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Juhoon Kim|3": {
+    "name": "Juhoon Kim",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 11204.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kahlia Hodgson|3": {
+    "name": "Kahlia Hodgson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 9190.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Kawaljeet Kaur|3": {
+    "name": "Kawaljeet Kaur",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 17977.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lara Grocke|3": {
+    "name": "Lara Grocke",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 12309.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Leila Radford|3": {
+    "name": "Leila Radford",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 1899.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lily Roberts|3": {
+    "name": "Lily Roberts",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 7951.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lola O Connor|3": {
+    "name": "Lola O Connor",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 19758.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lori Bowman|3": {
+    "name": "Lori Bowman",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 5098.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Lucie Wheeler|3": {
+    "name": "Lucie Wheeler",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 4840.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mackenzie Van Der Jeugd|3": {
+    "name": "Mackenzie Van Der Jeugd",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 20894.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Maddi Higgins|3": {
+    "name": "Maddi Higgins",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 13491.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Madison Thwaites|3": {
+    "name": "Madison Thwaites",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 35.15,
+    "annual_salary": 43154.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mariia Skrypnyk|3": {
+    "name": "Mariia Skrypnyk",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 7275.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marion Mercier|3": {
+    "name": "Marion Mercier",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10383.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Marisa Serem|3": {
+    "name": "Marisa Serem",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 50656.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Mark Dela Cruz|3": {
+    "name": "Mark Dela Cruz",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": true,
+    "unit_rate": 28.12,
+    "annual_salary": 64913.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 32.8507
+  },
+  "Mathilda Todd|3": {
+    "name": "Mathilda Todd",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 19.39,
+    "annual_salary": 5711.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Megan Hood|3": {
+    "name": "Megan Hood",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 7953.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Millie Tiekstra|3": {
+    "name": "Millie Tiekstra",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10299.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Nao Otsubo|3": {
+    "name": "Nao Otsubo",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 31435.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Nathan Adam|3": {
+    "name": "Nathan Adam",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 47914.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Norbert Kupski|3": {
+    "name": "Norbert Kupski",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 31.19,
+    "annual_salary": 31374.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Petra Kaniokova|3": {
+    "name": "Petra Kaniokova",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 10935.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Polina Kovalova|3": {
+    "name": "Polina Kovalova",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 1680.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rachel Turnbull|3": {
+    "name": "Rachel Turnbull",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 45810.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ranjan Khanal|3": {
+    "name": "Ranjan Khanal",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 37.35,
+    "annual_salary": 35585.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Rhys Hutchins|3": {
+    "name": "Rhys Hutchins",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": true,
+    "unit_rate": 43.0162,
+    "annual_salary": 85000.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": 43.0162
+  },
+  "Ruby Amos-love|3": {
+    "name": "Ruby Amos-love",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 29738.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Ruby Gurney|3": {
+    "name": "Ruby Gurney",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 43253.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sammi Thiele|3": {
+    "name": "Sammi Thiele",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 27559.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sofia Kouzionis|3": {
+    "name": "Sofia Kouzionis",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4843.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Ackermann|3": {
+    "name": "Sophia Ackermann",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 33.38,
+    "annual_salary": 8938.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Sophia Lattas|3": {
+    "name": "Sophia Lattas",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 32.31,
+    "annual_salary": 8821.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Troy Wood|3": {
+    "name": "Troy Wood",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 38.35,
+    "annual_salary": 77858.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Will Dallisson|3": {
+    "name": "Will Dallisson",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 27.46,
+    "annual_salary": 41687.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Willow Mutton|3": {
+    "name": "Willow Mutton",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 15.59,
+    "annual_salary": 3891.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Xavier Kent|3": {
+    "name": "Xavier Kent",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 4759.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  },
+  "Yolanda Secomb|3": {
+    "name": "Yolanda Secomb",
+    "company_id": 3,
+    "org": "NEST",
+    "is_salaried": false,
+    "unit_rate": 22.63,
+    "annual_salary": 6472.0,
+    "std_weekly_hours": 38.0,
+    "salary_hourly": null
+  }
+}

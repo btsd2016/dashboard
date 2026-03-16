@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Seller Door — Group Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --bg:      #faf9f6;
+      --bg2:     #f3f1ec;
+      --bg3:     #eceae4;
+      --border:  #ddd9d0;
+      --border2: #c8c3b8;
+      --text:    #1a1916;
+      --muted:   #7a7670;
+      --muted2:  #a8a49e;
+
+      --tsd-accent: #0A6640; --tsd-tint: #e6f0eb; --tsd-fill: #0A6640; --tsd-text: #0A6640; --tsd-badge-bg: #0A6640; --tsd-badge-text: #fff;
+      --nes-accent: #D4C9A8; --nes-tint: #f5f0e8; --nes-fill: #b0a080; --nes-text: #6b5a42; --nes-badge-bg: #b0a080; --nes-badge-text: #fff;
+      --tlc-accent: #7DBF9B; --tlc-tint: #eef8f3; --tlc-fill: #5aa882; --tlc-text: #2d6b52; --tlc-badge-bg: #5aa882; --tlc-badge-text: #fff;
+      --lnm-accent: #EDE6D3; --lnm-tint: #faf8f3; --lnm-fill: #c8bfa8; --lnm-text: #8c7a62; --lnm-badge-bg: #c8bfa8; --lnm-badge-text: #5a4f3e;
+
+      --good:  #0A6640;
+      --warn:  #b45309;
+      --bad:   #b91c1c;
+
+      --font-mono: 'DM Mono', 'Courier New', Courier, monospace;
+      --font-serif: 'DM Mono', 'Courier New', Courier, monospace; /* typewriter style throughout */
+      --font-display: 'Playfair Display', Georgia, serif; /* reserved for dashboard title only */
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-mono); background: var(--bg); color: var(--text); min-height: 100vh; font-size: 13px; line-height: 1.6; }
+
+    /* ── HEADER ── */
+    header { background: var(--bg); border-bottom: 2px solid var(--text); padding: 0 40px; display: flex; align-items: stretch; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .header-left { display: flex; align-items: center; gap: 20px; padding: 14px 0; border-right: 1px solid var(--border); padding-right: 24px; }
+    .tsd-logo { background: var(--tsd-accent); color: #fff; font-family: var(--font-mono); font-weight: 500; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; padding: 6px 10px; line-height: 1.5; }
+    .header-title { font-family: var(--font-display); font-size: 17px; font-weight: 400; color: var(--text); }
+    .header-right { display: flex; align-items: center; gap: 20px; padding: 14px 0; }
+    .period-display { font-size: 11px; color: var(--muted); border: 1px solid var(--border); padding: 4px 10px; letter-spacing: 0.02em; }
+    .btn { background: none; border: 1px solid var(--border2); color: var(--muted); padding: 5px 12px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; cursor: pointer; transition: all 0.15s; }
+    .btn:hover { border-color: var(--tsd-accent); color: var(--tsd-accent); }
+    .btn.spinning { opacity: 0.4; pointer-events: none; }
+    .last-refresh { font-size: 11px; color: var(--muted2); }
+    .user-info { font-size: 11px; color: var(--muted); }
+    a.logout { color: var(--muted2); text-decoration: none; font-size: 11px; }
+    a.logout:hover { color: var(--text); }
+
+    /* ── NAV ── */
+    nav { background: var(--bg); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; }
+    .nav-tab { padding: 10px 16px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.15s; user-select: none; }
+    .nav-tab:hover { color: var(--text); }
+    .nav-tab.active { color: var(--tsd-accent); border-bottom-color: var(--tsd-accent); }
+
+    /* ── DATE RANGE PICKER ── */
+    .date-bar { display: flex; align-items: center; gap: 10px; padding: 12px 40px; background: var(--bg2); border-bottom: 1px solid var(--border); font-size: 11px; color: var(--muted); flex-wrap: wrap; }
+    .date-bar label { color: var(--muted); letter-spacing: 0.06em; }
+    .date-bar input[type=date] { font-family: var(--font-mono); font-size: 11px; border: 1px solid var(--border2); background: var(--bg); color: var(--text); padding: 4px 8px; cursor: pointer; }
+    .date-bar input[type=date]:focus { outline: none; border-color: var(--tsd-accent); }
+    .quick-btn { background: none; border: 1px solid var(--border); color: var(--muted); padding: 3px 10px; font-family: var(--font-mono); font-size: 10px; cursor: pointer; letter-spacing: 0.04em; transition: all 0.15s; }
+    .quick-btn:hover, .quick-btn.active { background: var(--tsd-accent); color: #fff; border-color: var(--tsd-accent); }
+    .date-sep { color: var(--border2); }
+
+    /* ── MAIN ── */
+    main { padding: 28px 40px; max-width: 1320px; }
+
+    /* ── SECTION HEADER double-slash ── */
+    .sh { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+    .sh::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* ── PENDING ── */
+    .pending { display: flex; align-items: center; gap: 10px; background: rgba(180,83,9,0.06); border: 1px solid rgba(180,83,9,0.2); padding: 9px 14px; font-size: 11px; color: var(--warn); margin-bottom: 20px; font-family: var(--font-mono); }
+    .pdot { width: 5px; height: 5px; background: var(--warn); border-radius: 50%; flex-shrink: 0; animation: blink 2s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+    /* ── KPI STRIP ── */
+    .kpi-strip { display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid var(--border); overflow: hidden; margin-bottom: 28px; }
+    .kpi-tile { padding: 18px 22px; border-right: 1px solid var(--border); background: #fff; }
+    .kpi-tile:last-child { border-right: none; }
+    .kpi-label { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; font-family: var(--font-mono); }
+    .kpi-val { font-family: var(--font-mono); font-size: 28px; color: var(--text); line-height: 1; font-weight: 500; letter-spacing: -0.02em; }
+    .kpi-sub { font-size: 10px; color: var(--muted2); margin-top: 5px; font-family: var(--font-mono); }
+    .up { color: var(--good); } .dn { color: var(--bad); }
+
+    /* ── VENUE GRID ── */
+    .venue-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .vc { border: 1px solid var(--border); overflow: hidden; }
+    .vc-head { padding: 13px 17px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .vc-name-block { display: flex; align-items: center; gap: 10px; }
+    .vc-badge { font-size: 9px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; font-family: var(--font-mono); }
+    .vc-name { font-family: var(--font-serif); font-size: 15px; font-weight: 400; }
+    .vc-loc { font-size: 10px; color: var(--muted); letter-spacing: 0.04em; font-family: var(--font-mono); }
+    .vc-target { font-size: 10px; font-family: var(--font-mono); letter-spacing: 0.02em; }
+    .vc-body { padding: 15px 17px; background: #fff; }
+    .vc-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; margin-bottom: 14px; }
+    .vcs-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 4px; font-family: var(--font-mono); }
+    .vcs-val { font-family: var(--font-mono); font-size: 19px; line-height: 1; font-weight: 500; letter-spacing: -0.01em; }
+    .labour-good { color: var(--good); } .labour-warn { color: var(--warn); } .labour-bad { color: var(--bad); } .labour-pending { color: var(--muted2); font-size: 13px; font-family: var(--font-mono); }
+    .bar-meta { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-bottom: 5px; font-family: var(--font-mono); }
+    .bar-track { position: relative; height: 5px; background: var(--bg2); }
+    .bar-fill { height: 100%; transition: width 0.8s cubic-bezier(.4,0,.2,1); }
+    .bar-tick { position: absolute; top: -4px; width: 2px; height: 13px; background: var(--muted); transform: translateX(-50%); }
+    .bar-tick-lbl { position: absolute; top: 11px; font-size: 9px; color: var(--muted); transform: translateX(-50%); white-space: nowrap; font-family: var(--font-mono); }
+
+    /* ── CHARTS ── */
+    .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .chart-card { background: #fff; border: 1px solid var(--border); }
+    .chart-head { padding: 13px 17px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: baseline; }
+    .chart-head-title { font-size: 10px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; font-family: var(--font-mono); }
+    .chart-body { padding: 16px 17px; }
+
+    /* ── TABLE ── */
+    .table-wrap { background: #fff; border: 1px solid var(--border); margin-bottom: 32px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12px; }
+    th { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); font-weight: 400; }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: var(--bg); }
+    .table-note { padding: 9px 12px; font-size: 10px; color: var(--muted2); border-top: 1px solid var(--border); font-style: italic; font-family: var(--font-mono); }
+    .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+
+    /* ── MONTHLY TABLE ── */
+    .monthly-table th:first-child, .monthly-table td:first-child { font-weight: 500; white-space: nowrap; }
+    .monthly-table td.month-head { font-weight: 500; color: var(--muted); font-size: 10px; letter-spacing: 0.06em; }
+
+    /* ── INSIGHTS ── */
+    .insights-card { background: #fff; border: 1px solid var(--border); margin-bottom: 32px; }
+    .insight-row { display: flex; gap: 14px; align-items: flex-start; padding: 13px 17px; border-bottom: 1px solid var(--border); }
+    .insight-row:last-child { border-bottom: none; }
+    .insight-n { font-family: var(--font-serif); font-size: 20px; color: var(--tsd-accent); flex-shrink: 0; line-height: 1.2; width: 16px; }
+    .insight-text { font-size: 12px; color: var(--text); line-height: 1.7; font-family: var(--font-mono); }
+
+    /* ── DEEP DIVE ── */
+    .venue-selector { display: flex; gap: 0; border: 1px solid var(--border); margin-bottom: 20px; overflow: hidden; }
+    .venue-sel-btn { flex: 1; padding: 10px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em; cursor: pointer; border: none; border-right: 1px solid var(--border); background: #fff; color: var(--muted); transition: all 0.15s; text-align: center; }
+    .venue-sel-btn:last-child { border-right: none; }
+    .venue-sel-btn.active { color: #fff; }
+    .dd-kpi-strip { display: grid; grid-template-columns: repeat(5,1fr); border: 1px solid var(--border); overflow: hidden; margin-bottom: 20px; }
+    .dd-kpi { padding: 14px 16px; border-right: 1px solid var(--border); background: #fff; }
+    .dd-kpi:last-child { border-right: none; }
+    .dd-kpi .kpi-val { font-size: 22px; }
+
+    /* ── LOADING ── */
+    .loading-overlay { position: fixed; inset: 0; background: var(--bg); display: flex; align-items: center; justify-content: center; z-index: 1000; transition: opacity 0.3s; }
+    .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+    .loading-logo { background: var(--tsd-accent); color: #fff; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; padding: 10px 16px; margin: 0 auto 18px; display: inline-block; line-height: 1.5; }
+    .loading-sub { font-size: 11px; color: var(--muted); letter-spacing: 0.08em; text-align: center; font-family: var(--font-mono); }
+    .spinner { width: 22px; height: 22px; border: 1.5px solid var(--border); border-top-color: var(--tsd-accent); border-radius: 50%; animation: spin 0.7s linear infinite; margin: 14px auto 0; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .empty { padding: 40px; text-align: center; color: var(--muted); font-size: 12px; font-family: var(--font-mono); }
+
+    @media (max-width: 900px) {
+      main, header, nav, .date-bar { padding-left: 16px; padding-right: 16px; }
+      .kpi-strip, .dd-kpi-strip { grid-template-columns: 1fr 1fr; }
+      .venue-grid, .charts-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loadingOverlay">
+  <div style="text-align:center">
+    <div class="loading-logo">THE<br>SELLER DOOR</div>
+    <div class="loading-sub">// loading dashboard</div>
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<header>
+  <div class="header-left">
+    <div class="tsd-logo">THE<br>SELLER<br>DOOR</div>
+    <div class="header-title">Group Dashboard</div>
+  </div>
+  <div class="header-right">
+    <div class="period-display" id="periodLabel">—</div>
+    <div class="last-refresh" id="lastRefresh"></div>
+    <button class="btn" id="refreshBtn" onclick="triggerRefresh()">↻ refresh</button>
+    <span class="user-info">__USER__</span>
+    <a href="/auth/logout" class="logout">sign out</a>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-tab active" onclick="showView('group')">// group summary</div>
+  <div class="nav-tab" onclick="showView('venue')">// venue deep dive</div>
+  <div class="nav-tab" onclick="showView('monthly')">// monthly</div>
+</nav>
+
+<!-- DATE BAR — shared across all views -->
+<div class="date-bar">
+  <span>// period</span>
+  <button class="quick-btn active" id="qbtnWeek" onclick="setQuick('week')">this week</button>
+  <button class="quick-btn" id="qbtnLastWeek" onclick="setQuick('lastWeek')">last week</button>
+  <button class="quick-btn" id="qbtnMonth" onclick="setQuick('month')">this month</button>
+  <div class="date-sep">|</div>
+  <label>from</label>
+  <input type="date" id="dateFrom" onchange="setCustomRange()">
+  <label>to</label>
+  <input type="date" id="dateTo" onchange="setCustomRange()">
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════
+     GROUP SUMMARY
+═══════════════════════════════════════════ -->
+<div id="view-group">
+  <div class="pending" id="pendingNote" style="display:none">
+    <div class="pdot"></div><span id="pendingText"></span>
+  </div>
+
+  <div class="sh">// weekly summary // all venues</div>
+  <div class="kpi-strip" style="margin-bottom:28px">
+    <div class="kpi-tile"><div class="kpi-label">Net Sales</div><div class="kpi-val" id="kpiSales">—</div><div class="kpi-sub" id="kpiSalesWow"></div></div>
+    <div class="kpi-tile"><div class="kpi-label">Est. GP %</div><div class="kpi-val" id="kpiGp">—</div><div class="kpi-sub" id="kpiGpNote"></div></div>
+    <div class="kpi-tile"><div class="kpi-label">Labour %</div><div class="kpi-val" id="kpiLabour">—</div><div class="kpi-sub" id="kpiLabourWow"></div></div>
+    <div class="kpi-tile"><div class="kpi-label">Avg Transaction</div><div class="kpi-val" id="kpiAvgTx">—</div><div class="kpi-sub" id="kpiAvgTxWow"></div></div>
+  </div>
+
+  <div class="sh">// labour % at a glance // all venues</div>
+  <div class="venue-grid" id="venueGrid"></div>
+
+  <div class="sh">// charts // labour & sales</div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <div class="chart-head"><span class="chart-head-title">labour % vs target</span><span style="font-size:10px;color:var(--muted2)">dashed = per-venue target</span></div>
+      <div class="chart-body"><div style="position:relative;height:200px"><canvas id="labourChart"></canvas></div></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-head"><span class="chart-head-title">sales vs labour cost</span></div>
+      <div class="chart-body"><div style="position:relative;height:200px"><canvas id="salesChart"></canvas></div></div>
+    </div>
+  </div>
+
+  <div class="sh">// venue summary table</div>
+  <div class="table-wrap">
+    <table><thead><tr>
+      <th>Venue</th><th>Net Sales</th><th>Transactions</th><th>Avg Tx</th>
+      <th>Labour Hrs</th><th>Labour Cost</th><th>Labour %</th><th>Target</th><th>vs Target</th>
+    </tr></thead>
+    <tbody id="summaryBody"></tbody></table>
+    <div class="table-note">// labour % on approved timesheets only · refreshes 6am / 12pm / 6pm / 12am ACST</div>
+  </div>
+
+  <div class="sh">// ai insights // generated 6pm daily</div>
+  <div class="insights-card" id="insightsCard">
+    <div class="insight-row">
+      <div class="insight-n">—</div>
+      <div class="insight-text" style="color:var(--muted);font-style:italic">Insights appear at 6pm each day once Anthropic API key is configured in Railway.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     VENUE DEEP DIVE
+═══════════════════════════════════════════ -->
+<div id="view-venue" style="display:none">
+  <div class="sh">// venue deep dive</div>
+  <div class="venue-selector" id="venueSelector">
+    <div class="venue-sel-btn active" onclick="selectVenue('TSD')" id="vbtn-TSD" style="background:#0A6640;color:#fff">The Seller Door</div>
+    <div class="venue-sel-btn" onclick="selectVenue('NES')" id="vbtn-NES">Nest Kiosk</div>
+    <div class="venue-sel-btn" onclick="selectVenue('TLC')" id="vbtn-TLC">The Local Canteen</div>
+    <div class="venue-sel-btn" onclick="selectVenue('LNM')" id="vbtn-LNM">Little Nest</div>
+  </div>
+  <div id="deepDiveContent"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MONTHLY SUMMARY
+═══════════════════════════════════════════ -->
+<div id="view-monthly" style="display:none">
+  <div class="sh">// monthly summary // jul 2025 – present</div>
+  <div class="sh" style="margin-top:-6px;margin-bottom:20px">// revenue</div>
+  <div class="table-wrap" style="margin-bottom:24px"><table id="monthlyRevTable" class="monthly-table"><thead></thead><tbody></tbody></table></div>
+  <div class="sh">// gross profit %</div>
+  <div class="table-wrap" style="margin-bottom:24px"><table id="monthlyGpTable" class="monthly-table"><thead></thead><tbody></tbody></table></div>
+  <div class="sh">// labour %</div>
+  <div class="table-wrap" style="margin-bottom:24px"><table id="monthlyLabTable" class="monthly-table"><thead></thead><tbody></tbody></table></div>
+  <div class="table-note" style="padding:10px 0;font-size:10px;color:var(--muted2);font-style:italic;font-family:var(--font-mono)">// xero data · upload monthly p&l files via google drive to update</div>
+</div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+// ──────────────────────────────────────────────────────────────
+// CONFIG
+// ──────────────────────────────────────────────────────────────
+const VENUES = {
+  TSD: { name:'The Seller Door', loc:'Brighton',     code:'TSD', tint:'#e6f0eb', fill:'#0A6640', text:'#0A6640', badgeBg:'#0A6640', badgeText:'#fff', wdT:40, weT:35, depId:1 },
+  NES: { name:'Nest Kiosk',      loc:'Kingston Park',code:'NES', tint:'#f5f0e8', fill:'#b0a080', text:'#6b5a42', badgeBg:'#b0a080', badgeText:'#fff', wdT:32, weT:25, depId:3 },
+  TLC: { name:'The Local Canteen',loc:'Henley',      code:'TLC', tint:'#eef8f3', fill:'#5aa882', text:'#2d6b52', badgeBg:'#5aa882', badgeText:'#fff', wdT:35, weT:30, depId:2 },
+  LNM: { name:'Little Nest',     loc:'Marino',       code:'LNM', tint:'#faf8f3', fill:'#c8bfa8', text:'#8c7a62', badgeBg:'#c8bfa8', badgeText:'#5a4f3e', wdT:45, weT:40, depId:4 },
+};
+const ORDER = ['TSD','NES','TLC','LNM'];
+const DEP_MAP = {1:'TSD',2:'TLC',3:'NES',4:'LNM'};
+const MONTHS = ['2025-07','2025-08','2025-09','2025-10','2025-11','2025-12','2026-01','2026-02','2026-03'];
+const MONTH_LABELS = {'2025-07':'Jul 25','2025-08':'Aug 25','2025-09':'Sep 25','2025-10':'Oct 25','2025-11':'Nov 25','2025-12':'Dec 25','2026-01':'Jan 26','2026-02':'Feb 26','2026-03':'Mar 26'};
+
+let appData = null;
+let charts = {};
+let selectedVenue = 'TSD';
+let currentRange = { mode: 'week', start: null, end: null };
+
+// ──────────────────────────────────────────────────────────────
+// DATE HELPERS
+// ──────────────────────────────────────────────────────────────
+function getAdelaideDate() {
+  // Get current date in Adelaide timezone reliably
+  const now = new Date();
+  const adelaideStr = now.toLocaleDateString('en-CA', { timeZone: 'Australia/Adelaide' }); // en-CA gives YYYY-MM-DD
+  const adelaideTimeStr = now.toLocaleTimeString('en-AU', { timeZone: 'Australia/Adelaide', hour12: false });
+  return new Date(adelaideStr + 'T' + adelaideTimeStr);
+}
+
+function getWeekRange(offset = 0) {
+  const now = getAdelaideDate();
+  const day = now.getDay(); // 0=Sun
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1) + offset * 7);
+  const sunday = new Date(monday);
+  sunday.setDate(monday.getDate() + 6);
+  const fmt = d => d.toLocaleDateString('en-CA'); // YYYY-MM-DD
+  return { start: fmt(monday), end: fmt(sunday) };
+}
+
+function getMonthRange() {
+  const now = getAdelaideDate();
+  const start = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-01`;
+  const end = now.toLocaleDateString('en-CA');
+  return { start, end };
+}
+
+function isWeekend() { const d = getAdelaideDate().getDay(); return d===0||d===6; }
+
+function targetFor(code) {
+  const v = VENUES[code];
+  return isWeekend() ? v.weT : v.wdT;
+}
+
+function setQuick(mode) {
+  document.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('qbtn'+mode.charAt(0).toUpperCase()+mode.slice(1)).classList.add('active');
+  if (mode === 'week')     currentRange = { mode, ...getWeekRange(0) };
+  if (mode === 'lastWeek') currentRange = { mode, ...getWeekRange(-1) };
+  if (mode === 'month')    currentRange = { mode, ...getMonthRange() };
+  document.getElementById('dateFrom').value = currentRange.start;
+  document.getElementById('dateTo').value   = currentRange.end;
+  if (appData) renderAll(appData);
+}
+
+function setCustomRange() {
+  const s = document.getElementById('dateFrom').value;
+  const e = document.getElementById('dateTo').value;
+  if (s && e && s <= e) {
+    document.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('active'));
+    currentRange = { mode: 'custom', start: s, end: e };
+    if (appData) renderAll(appData);
+  }
+}
+
+// Init date inputs
+const wr = getWeekRange(0);
+currentRange = { mode: 'week', ...wr };
+document.getElementById('dateFrom').value = wr.start;
+document.getElementById('dateTo').value   = wr.end;
+
+// ──────────────────────────────────────────────────────────────
+// FORMAT
+// ──────────────────────────────────────────────────────────────
+function fmt$(n, full=false) {
+  if (n==null||isNaN(n)) return '—';
+  if (full) return '$'+Math.round(n).toLocaleString('en-AU');
+  return n>=1000 ? '$'+(n/1000).toFixed(1)+'k' : '$'+n.toFixed(0);
+}
+function fmtPct(n) { if (!n||isNaN(n)) return '—'; return n.toFixed(1)+'%'; }
+function labColour(pct) {
+  if (!pct) return 'var(--muted2)';
+  if (pct < 30) return 'var(--good)';
+  if (pct <= 35) return 'var(--warn)';
+  return 'var(--bad)';
+}
+function labClass(pct) {
+  if (!pct) return 'labour-pending';
+  if (pct < 30) return 'labour-good';
+  if (pct <= 35) return 'labour-warn';
+  return 'labour-bad';
+}
+function wowHtml(curr, prev) {
+  if (!prev||!curr) return '';
+  const d = (curr-prev)/prev*100;
+  const cls = d>0?'up':'dn'; const a = d>0?'↑':'↓';
+  return `<span class="${cls}">${a} ${Math.abs(d).toFixed(1)}%</span> vs prev`;
+}
+function fmtMonth(key) { return MONTH_LABELS[key] || key; }
+
+// ──────────────────────────────────────────────────────────────
+// RENDER MAIN
+// ──────────────────────────────────────────────────────────────
+function renderAll(data) {
+  appData = data;
+  const sales = data.sales || {};
+  const labour = data.labour || {};
+
+  // Labour by venue
+  const labV = {};
+  Object.entries(labour.byLocation||{}).forEach(([id,d]) => {
+    const c = DEP_MAP[parseInt(id)]; if (c) labV[c] = d;
+  });
+
+  // Period label (use selected range)
+  const fmt = s => new Date(s+'T00:00:00').toLocaleDateString('en-AU',{day:'numeric',month:'short'});
+  document.getElementById('periodLabel').textContent = fmt(currentRange.start)+' – '+fmt(currentRange.end);
+
+  if (data.lastRefresh) {
+    const d = new Date(data.lastRefresh);
+    document.getElementById('lastRefresh').textContent = 'updated '+d.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit'});
+  }
+
+  // isEstimated flag — true until Monday payroll staging completes
+  const isEst = labour.isEstimated || false;
+  const estPfx = isEst ? '~' : '';  // prefix all labour % values with ~ when estimated
+
+  // Pending / estimated note
+  const ts = labour.timesheets||0;
+  const pn = document.getElementById('pendingNote');
+  if (ts===0) {
+    pn.style.display='flex';
+    document.getElementById('pendingText').textContent='// no timesheets recorded yet — labour costs pending';
+  } else if (isEst) {
+    const estCount = Object.values(labour.byLocation||{}).reduce((s,l)=>s+(l.estimatedShifts||0),0);
+    const unmatched = labour.unmatchedCount||0;
+    pn.style.display='flex';
+    document.getElementById('pendingText').textContent=
+      `// ${ts} timesheet${ts!==1?'s':''} recorded — ${estCount} estimated from Xero rates${unmatched>0?' ('+unmatched+' unmatched)':''}`;
+  } else {
+    pn.style.display='none';
+  }
+
+  // Group KPIs
+  const totSales = ORDER.reduce((s,c)=>s+(sales[c]?.totalNet||0),0);
+  const totTx    = ORDER.reduce((s,c)=>s+(sales[c]?.transactionCount||0),0);
+  const avgTx    = totTx>0 ? totSales/totTx : 0;
+  const totCost  = labour.totalWageCost||0;
+  const grpPct   = totSales>0&&totCost>0 ? totCost/totSales*100 : null;
+
+  // GP from latest xero
+  const xeroLatest = data.xero || {};
+  const allGp = ORDER.filter(c=>xeroLatest[c]?.gpPct).map(c=>xeroLatest[c].gpPct);
+  const avgGp = allGp.length ? allGp.reduce((a,b)=>a+b,0)/allGp.length : null;
+
+  document.getElementById('kpiSales').textContent = fmt$(totSales,true);
+  document.getElementById('kpiGp').textContent = avgGp ? fmtPct(avgGp) : '—';
+  document.getElementById('kpiGpNote').textContent = avgGp ? 'from latest xero upload' : 'upload xero xlsx to populate';
+  const kpiLabEl = document.getElementById('kpiLabour');
+  kpiLabEl.textContent = grpPct ? estPfx+fmtPct(grpPct) : '—';
+  kpiLabEl.style.color = grpPct ? labColour(grpPct) : '';
+  if (isEst) kpiLabEl.title = 'Estimated from Xero payroll rates — updates to actual after Monday payroll';
+  document.getElementById('kpiAvgTx').textContent = avgTx ? '$'+avgTx.toFixed(2) : '—';
+
+  // Venue cards
+  const grid = document.getElementById('venueGrid');
+  grid.innerHTML = ORDER.map(code => {
+    const v = VENUES[code];
+    const s = sales[code]||{};
+    const l = labV[code]||{};
+    const net  = s.totalNet||0;
+    const tx   = s.transactionCount||0;
+    const avg  = tx>0 ? net/tx : 0;
+    const cost = l.cost||0;
+    const hrs  = l.hours||0;
+    const pct  = net>0&&cost>0 ? cost/net*100 : null;
+    const tgt  = targetFor(code);
+    const tgtPos = (100/1.3).toFixed(1); // tick always at 100/130 of track
+    const barW = pct ? Math.min(pct/tgt*100,130).toFixed(1) : 0;
+    const xv = xeroLatest[code];
+    const gp = xv?.gpPct ? fmtPct(xv.gpPct) : '—';
+
+    return `<div class="vc" style="background:${v.tint}">
+      <div class="vc-head" style="background:${v.tint}">
+        <div class="vc-name-block">
+          <span class="vc-badge" style="background:${v.badgeBg};color:${v.badgeText}">${v.code}</span>
+          <div><div class="vc-name">${v.name}</div><div class="vc-loc">${v.loc}</div></div>
+        </div>
+        <div class="vc-target" style="color:${v.text}">target ${tgt}% (${isWeekend()?'WE':'WD'})</div>
+      </div>
+      <div class="vc-body">
+        <div class="vc-stats">
+          <div><div class="vcs-label">Labour %</div><div class="vcs-val ${labClass(pct)}">${pct?estPfx+fmtPct(pct):'⏳ pending'}</div></div>
+          <div><div class="vcs-label">Net Sales</div><div class="vcs-val">${fmt$(net,true)}</div></div>
+          <div><div class="vcs-label">GP % <span style="font-size:9px;color:var(--muted2)">(Xero)</span></div><div class="vcs-val" style="color:var(--tsd-accent)">${gp}</div></div>
+        </div>
+        <div style="border-top:1px solid var(--bg2);padding-top:10px;margin-top:4px">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;margin-bottom:10px">
+            <div>
+              <div class="vcs-label">Labour Cost</div>
+              <div style="font-size:13px;font-weight:500;font-family:var(--font-mono);color:var(--text)">${cost ? fmt$(cost,true) : '—'}</div>
+            </div>
+            <div>
+              <div class="vcs-label">Hours</div>
+              <div style="font-size:13px;font-weight:500;font-family:var(--font-mono);color:var(--text)">${hrs ? hrs.toFixed(1) : '—'}</div>
+            </div>
+            <div>
+              <div class="vcs-label">Avg Transaction</div>
+              <div style="font-size:13px;font-weight:500;font-family:var(--font-mono);color:var(--text)">${avg ? '$'+avg.toFixed(2) : '—'}</div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--muted2);font-family:var(--font-mono);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:4px">
+              <span>Labour % of Sales</span><span>Target ${tgt}%</span>
+            </div>
+            <div style="position:relative;height:5px;background:var(--bg2);border-radius:1px">
+              <div style="height:100%;width:${pct ? Math.min(pct/tgt*100,100).toFixed(1) : 0}%;background:${v.fill};border-radius:1px"></div>
+              ${pct ? `<div style="position:absolute;top:-9px;left:${Math.min(pct/tgt*100,100).toFixed(1)}%;transform:translateX(-50%);font-size:9px;font-family:var(--font-mono);color:${v.fill};font-weight:500;white-space:nowrap">${estPfx}${pct.toFixed(1)}%</div>` : ''}
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--border2);font-family:var(--font-mono);margin-top:2px">
+              <span>0%</span><span>${tgt}%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Summary table
+  const tbody = document.getElementById('summaryBody');
+  let tNet=0,tTx=0,tCost=0,tHrs=0;
+  tbody.innerHTML = ORDER.map(code => {
+    const v=VENUES[code],s=sales[code]||{},l=labV[code]||{};
+    const net=s.totalNet||0,tx=s.transactionCount||0,avg=tx>0?net/tx:0;
+    const cost=l.cost||0,hrs=l.hours||0;
+    const pct=net>0&&cost>0?cost/net*100:null;
+    const tgt=targetFor(code),vs=pct?pct-tgt:null;
+    tNet+=net;tTx+=tx;tCost+=cost;tHrs+=hrs;
+    return `<tr>
+      <td><span class="dot" style="background:${v.fill}"></span>${v.name}</td>
+      <td>${fmt$(net,true)}</td><td>${tx?tx.toLocaleString():'—'}</td><td>${avg?'$'+avg.toFixed(2):'—'}</td>
+      <td>${hrs?hrs.toFixed(1):'—'}</td><td>${cost?fmt$(cost,true):'—'}</td>
+      <td style="color:${pct?labColour(pct):'var(--muted2)'};font-weight:500">${pct?estPfx+fmtPct(pct):'—'}</td>
+      <td style="color:var(--muted)">${tgt}%</td>
+      <td style="color:${vs!=null?(vs<=0?'var(--good)':vs<=3?'var(--warn)':'var(--bad)'):'var(--muted2)'};font-weight:500">${vs!=null?(vs>0?'+':'')+vs.toFixed(1)+'pp':'—'}</td>
+    </tr>`;
+  }).join('');
+  const tAvg=tTx>0?tNet/tTx:0,tPct=tNet>0&&tCost>0?tCost/tNet*100:null;
+  tbody.innerHTML+=`<tr style="border-top:2px solid var(--border)">
+    <td style="color:var(--muted)">// total</td>
+    <td style="font-weight:500">${fmt$(tNet,true)}</td><td style="font-weight:500">${tTx.toLocaleString()}</td><td style="font-weight:500">${tAvg?'$'+tAvg.toFixed(2):'—'}</td>
+    <td style="font-weight:500">${tHrs?tHrs.toFixed(1):'—'}</td><td style="font-weight:500">${tCost?fmt$(tCost,true):'—'}</td>
+    <td style="font-weight:500;color:${tPct?labColour(tPct):'var(--muted2)'}">${tPct?estPfx+fmtPct(tPct):'—'}</td><td></td><td></td>
+  </tr>`;
+
+  // Charts
+  renderCharts(sales, labV);
+
+  // AI Insights
+  const ins = data.aiInsights||[];
+  if (ins.length>0) {
+    document.getElementById('insightsCard').innerHTML = ins.slice(0,3).map((x,i)=>
+      `<div class="insight-row"><div class="insight-n">${i+1}</div><div class="insight-text">${x.text||x}</div></div>`
+    ).join('');
+  }
+
+  // Deep dive
+  renderDeepDive(data, selectedVenue, labV);
+
+  // Monthly
+  renderMonthly(data);
+
+  document.getElementById('loadingOverlay').classList.add('hidden');
+}
+
+// ──────────────────────────────────────────────────────────────
+// CHARTS
+// ──────────────────────────────────────────────────────────────
+function renderCharts(sales, labV) {
+  Object.values(charts).forEach(c=>c.destroy()); charts={};
+  const labels = ORDER.map(c=>VENUES[c].name.replace('The ','').replace(' Canteen',''));
+  const fills  = ORDER.map(c=>VENUES[c].fill);
+  const labPcts = ORDER.map(c=>{
+    const s=sales[c]||{},l=labV[c]||{};
+    return s.totalNet&&l.cost ? parseFloat((l.cost/s.totalNet*100).toFixed(1)) : 0;
+  });
+  const tgts = ORDER.map(c=>targetFor(c));
+  const tickFont = { family:"'Courier New', Courier, monospace", size:10 };
+  const gridColor = '#e8e5de';
+
+  const ctx1 = document.getElementById('labourChart').getContext('2d');
+  charts.l = new Chart(ctx1,{
+    type:'bar',
+    data:{ labels, datasets:[
+      { label:'Labour %', data:labPcts, backgroundColor:fills, borderRadius:1, barThickness:28 },
+      { label:'Target', data:tgts, type:'line', borderColor:'#a8a49e', borderWidth:1.5, borderDash:[4,3], pointRadius:3, pointBackgroundColor:'#a8a49e', fill:false },
+    ]},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.y.toFixed(1)+'%'}}},
+      scales:{ x:{grid:{display:false},ticks:{font:tickFont,color:'#7a7670'}},
+               y:{min:0,max:55,grid:{color:gridColor},ticks:{font:tickFont,color:'#7a7670',callback:v=>v+'%'}} }
+    }
+  });
+
+  const salesData = ORDER.map(c=>Math.round(sales[c]?.totalNet||0));
+  const costData  = ORDER.map(c=>Math.round(labV[c]?.cost||0));
+  const ctx2 = document.getElementById('salesChart').getContext('2d');
+  charts.s = new Chart(ctx2,{
+    type:'bar',
+    data:{ labels, datasets:[
+      { label:'Net Sales', data:salesData, backgroundColor:fills, borderRadius:1, barThickness:16 },
+      { label:'Labour Cost', data:costData, backgroundColor:fills.map(f=>f+'55'), borderRadius:1, barThickness:16 },
+    ]},
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{callbacks:{label:c=>c.dataset.label+': $'+Math.round(c.parsed.y).toLocaleString('en-AU')}}},
+      scales:{ x:{grid:{display:false},ticks:{font:tickFont,color:'#7a7670'}},
+               y:{grid:{color:gridColor},ticks:{font:tickFont,color:'#7a7670',callback:v=>'$'+(v>=1000?Math.round(v/1000)+'k':v)}} }
+    }
+  });
+}
+
+// ──────────────────────────────────────────────────────────────
+// DEEP DIVE
+// ──────────────────────────────────────────────────────────────
+function selectVenue(code) {
+  selectedVenue = code;
+  ORDER.forEach(c => {
+    const btn = document.getElementById('vbtn-'+c);
+    const v = VENUES[c];
+    if (c===code) { btn.style.background=v.fill; btn.style.color='#fff'; }
+    else { btn.style.background='#fff'; btn.style.color='var(--muted)'; }
+  });
+  if (appData) renderDeepDive(appData, code, buildLabV(appData));
+}
+
+function buildLabV(data) {
+  const labV={};
+  Object.entries((data.labour||{}).byLocation||{}).forEach(([id,d])=>{
+    const c=DEP_MAP[parseInt(id)]; if(c) labV[c]=d;
+  });
+  return labV;
+}
+
+function renderDeepDive(data, code, labV) {
+  const v = VENUES[code];
+  const s = (data.sales||{})[code]||{};
+  const l = labV[code]||{};
+  const net  = s.totalNet||0;
+  const tx   = s.transactionCount||0;
+  const avg  = tx>0?net/tx:0;
+  const cost = l.cost||0;
+  const hrs  = l.hours||0;
+  const pct  = net>0&&cost>0?cost/net*100:null;
+  const tgt  = targetFor(code);
+  const xv   = (data.xero||{})[code]||{};
+
+  // Area breakdown if available
+  const areas = Object.entries((data.labour||{}).byArea||{})
+    .filter(([,a])=>a.hours>0)
+    .sort(([,a],[,b])=>b.hours-a.hours)
+    .slice(0,8);
+
+  document.getElementById('deepDiveContent').innerHTML = `
+    <div class="dd-kpi-strip" style="background:${v.tint}">
+      <div class="dd-kpi"><div class="kpi-label">Net Sales</div><div class="kpi-val">${fmt$(net,true)}</div></div>
+      <div class="dd-kpi"><div class="kpi-label">Transactions</div><div class="kpi-val">${tx?tx.toLocaleString():'—'}</div></div>
+      <div class="dd-kpi"><div class="kpi-label">Avg Tx</div><div class="kpi-val">${avg?'$'+avg.toFixed(2):'—'}</div></div>
+      <div class="dd-kpi"><div class="kpi-label">Labour %</div><div class="kpi-val ${labClass(pct)}">${pct?estPfx+fmtPct(pct):'—'}</div></div>
+      <div class="dd-kpi"><div class="kpi-label">GP % (Xero)</div><div class="kpi-val" style="color:var(--tsd-accent)">${xv.gpPct?fmtPct(xv.gpPct):'—'}</div></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px">
+      <div class="table-wrap">
+        <table><thead><tr><th>Work Area</th><th>Hours</th><th>Cost</th></tr></thead>
+        <tbody>${areas.length ? areas.map(([id,a])=>`<tr><td>${a.name||id}</td><td>${a.hours.toFixed(1)}</td><td>${a.cost?fmt$(a.cost,true):'—'}</td></tr>`).join('') :
+        '<tr><td colspan="3" class="empty">No area breakdown available</td></tr>'}</tbody></table>
+      </div>
+      <div class="table-wrap">
+        <table><thead><tr><th>Xero (latest month)</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Revenue</td><td>${xv.revenue?fmt$(xv.revenue,true):'—'}</td></tr>
+          <tr><td>COGS</td><td>${xv.cogs?fmt$(xv.cogs,true):'—'}</td></tr>
+          <tr><td>Gross Profit</td><td style="color:var(--good)">${xv.grossProfit?fmt$(xv.grossProfit,true):'—'}</td></tr>
+          <tr><td>GP %</td><td style="color:var(--good)">${xv.gpPct?fmtPct(xv.gpPct):'—'}</td></tr>
+          <tr><td>Wages (ex mgmt)</td><td>${xv.wages?fmt$(xv.wages,true):'—'}</td></tr>
+          <tr><td>Labour %</td><td>${xv.labourPct?fmtPct(xv.labourPct):'—'}</td></tr>
+        </tbody></table>
+      </div>
+    </div>`;
+}
+
+// ──────────────────────────────────────────────────────────────
+// MONTHLY VIEW
+// ──────────────────────────────────────────────────────────────
+function renderMonthly(data) {
+  const monthly = data.xeroMonthly || {};
+  const availMonths = MONTHS.filter(m=>monthly[m]);
+
+  if (availMonths.length === 0) {
+    ['monthlyRevTable','monthlyGpTable','monthlyLabTable'].forEach(id=>{
+      document.getElementById(id).innerHTML = '<tbody><tr><td class="empty" colspan="10">No monthly Xero data yet — upload P&L files via Google Drive</td></tr></tbody>';
+    });
+    return;
+  }
+
+  function buildTable(tableId, metric, fmtFn, colourFn) {
+    const table = document.getElementById(tableId);
+    // Header
+    const headCols = ['<th>Venue</th>'].concat(availMonths.map(m=>`<th>${fmtMonth(m)}</th>`));
+    table.querySelector('thead').innerHTML = `<tr>${headCols.join('')}</tr>`;
+    // Rows
+    const rows = ORDER.map(code => {
+      const v = VENUES[code];
+      const cells = availMonths.map(m => {
+        const mdata = monthly[m];
+        // Merge both orgs: xero-pl stores combined from two files
+        // Find this venue's data across all uploads for this month
+        const vdata = mdata?.venues?.[code];
+        const val = vdata ? vdata[metric] : null;
+        const colour = colourFn ? colourFn(val) : '';
+        return `<td style="${colour?'color:'+colour+';font-weight:500':''}">${val!=null?fmtFn(val):'—'}</td>`;
+      });
+      return `<tr><td><span class="dot" style="background:${v.fill}"></span>${v.name}</td>${cells.join('')}</tr>`;
+    });
+    // Group total row for revenue
+    if (metric === 'revenue') {
+      const totalCells = availMonths.map(m => {
+        const mdata = monthly[m];
+        const total = ORDER.reduce((s,c)=>s+(mdata?.venues?.[c]?.revenue||0),0);
+        return `<td style="font-weight:500">${total?fmtFn(total):'—'}</td>`;
+      });
+      rows.push(`<tr style="border-top:2px solid var(--border)"><td style="color:var(--muted)">// total</td>${totalCells.join('')}</tr>`);
+    }
+    table.querySelector('tbody').innerHTML = rows.join('');
+  }
+
+  buildTable('monthlyRevTable', 'revenue', v=>fmt$(v,true), null);
+  buildTable('monthlyGpTable', 'gpPct', fmtPct, v=>v?v>=60?'var(--good)':v>=55?'var(--warn)':'var(--bad)':null);
+  buildTable('monthlyLabTable', 'labourPct', fmtPct, v=>v?v<30?'var(--good)':v<=35?'var(--warn)':'var(--bad)':null);
+}
+
+// ──────────────────────────────────────────────────────────────
+// VIEW SWITCHING
+// ──────────────────────────────────────────────────────────────
+function showView(name) {
+  document.querySelectorAll('.nav-tab').forEach((t,i)=>{
+    t.classList.toggle('active',['group','venue','monthly'][i]===name);
+  });
+  ['group','venue','monthly'].forEach(v=>{
+    document.getElementById('view-'+v).style.display = v===name?'':'none';
+  });
+}
+
+// ──────────────────────────────────────────────────────────────
+// DATA LOAD & REFRESH
+// ──────────────────────────────────────────────────────────────
+async function loadData() {
+  const overlay = document.getElementById('loadingOverlay');
+  try {
+    overlay.innerHTML = '<div style="text-align:center"><div class="loading-logo">THE<br>SELLER DOOR</div><div class="loading-sub" id="loadStatus">// connecting...</div><div class="spinner"></div></div>';
+
+    const wr = getWeekRange(0);
+    const isDefault = (currentRange.start === wr.start && currentRange.end === wr.end);
+    const url = isDefault
+      ? '/api/data?password=tsd2026'
+      : `/api/data?password=tsd2026&start=${currentRange.start}&end=${currentRange.end}`;
+
+    const st = document.getElementById('loadStatus');
+    if (st) st.textContent = '// fetching data...';
+
+    const res = await fetch(url);
+
+    if (st) st.textContent = `// server responded ${res.status}`;
+
+    if (!res.ok) {
+      const body = await res.text();
+      throw new Error(`HTTP ${res.status}: ${body.slice(0,100)}`);
+    }
+
+    if (st) st.textContent = '// parsing response...';
+    const data = await res.json();
+
+    if (st) st.textContent = '// rendering...';
+    try {
+      renderAll(data);
+    } catch(renderErr) {
+      throw new Error('Render error: ' + renderErr.message);
+    }
+
+  } catch(e) {
+    console.error('Load failed', e);
+    overlay.innerHTML = `<div style="text-align:center;font-family:'Courier New',monospace;padding:40px">
+      <div style="font-size:11px;color:#b45309;margin-bottom:16px;max-width:400px;word-break:break-all">❌ ${e.message}</div>
+      <button onclick="loadData()" style="background:none;border:1px solid #ddd9d0;color:#1a1916;padding:8px 16px;cursor:pointer;font-family:inherit;font-size:11px">retry</button>
+    </div>`;
+  }
+}
+
+async function triggerRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  btn.textContent='↻ refreshing...'; btn.classList.add('spinning');
+  try {
+    await fetch('/api/refresh?password=tsd2026',{method:'POST'});
+    await new Promise(r=>setTimeout(r,14000));
+    await loadData();
+  } catch(e){}
+  btn.textContent='↻ refresh'; btn.classList.remove('spinning');
+}
+
+loadData();
+setInterval(loadData, 10*60*1000);
+</script>
+</body>
+</html>
